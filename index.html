@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<style>
+    body {
+        background-color: floralwhite;
+    }
+
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: floralwhite;
+        }
+    }
+</style>
+
 <style>
     body, h1, h2, h3, h4, h5 {
         font-family: "Poppins", sans-serif
@@ -43,7 +56,7 @@
             <!--<img src="moligroup.psd" alt="moligroup_image" style="width:150px" />-->
             <img src="moligroup.jpg" style="width:150px" onclick="onClick(this)" alt="moligroup"></p>
         </div>
- 
+
         <div class="w3-bar-block">
             <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
             <a href="#molieats" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">molieats</a>
@@ -51,16 +64,282 @@
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a><br /><br /><br />
         </div>
 
-        <p>Translate this page:</p>
+
+
+        <!--
+
+
+
+
+            <div class="text-large country-current menu-container menu-item menu-skin-none">
+                <span class="country-name country-US">United States</span><a href="#here">EN</a>
+                <div class="country-selector text-large menu-panel">
+                    <div class="country-selector-item-outer selected-country">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.com/" class="menu-item text-large country-name country-US country-cell ">
+                                United States
+                            </a>
+                            <a href="https://www.vistaprint.com/vp/ns/setlanguage.aspx?langid=1&amp;returl=%2f" class="country-cell text-large country-language">
+                                EN
+                            </a>
+                            <a href="https://www.vistaprint.com/vp/ns/setlanguage.aspx?langid=15&amp;returl=%2fes%2f" class="country-cell text-large country-language">
+                                ES
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.com.au/" class="menu-item text-large country-name country-AU country-cell country-name-full-width">
+                                Australia
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.be/" class="menu-item text-large country-name country-BE country-cell ">
+                                België
+                            </a>
+                            <a href="https://www.vistaprint.be/vp/ns/setlanguage.aspx?langid=18&amp;returl=%2f" class="country-cell text-large country-language">
+                                NL
+                            </a>
+                            <a href="https://www.vistaprint.be/vp/ns/setlanguage.aspx?langid=17&amp;returl=%2ffr%2f" class="country-cell text-large country-language">
+                                FR
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="#PrintiRedirectMessageModal" data-rel="modalDialog" class="menu-item text-large country-name country-BR country-cell country-name-full-width">
+                                Brazil
+                            </a>
+                            <div class="dialog-content dialog-default-padding" data-dialog-skin="media" data-dialog-enablehistory="false" id="PrintiRedirectMessageModal">
+                                <div class="pop-header text-x-large">You are being redirected to our partner site, Printi.</div>
+                                <div class="dialog-button-group">
+                                    <a href="https://www.printi.com.br" target="_blank" class="textbutton textbutton-skin-emphasis">OK</a>
+                                    <a href="javascript:return false;" class="close-dialog textbutton textbutton-skin-emphasis">Cancel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.ca/" class="menu-item text-large country-name country-CA country-cell ">
+                                Canada
+                            </a>
+                            <a href="https://www.vistaprint.ca/vp/ns/setlanguage.aspx?langid=6&amp;returl=%2f" class="country-cell text-large country-language">
+                                EN
+                            </a>
+                            <a href="https://www.vistaprint.ca/vp/ns/setlanguage.aspx?langid=16&amp;returl=%2ffr%2f" class="country-cell text-large country-language">
+                                FR
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.dk/" class="menu-item text-large country-name country-DK country-cell country-name-full-width">
+                                Danmark
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.de/" class="menu-item text-large country-name country-DE country-cell country-name-full-width">
+                                Deutschland
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.es/" class="menu-item text-large country-name country-ES country-cell country-name-full-width">
+                                España
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.fr/" class="menu-item text-large country-name country-FR country-cell country-name-full-width">
+                                France
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.in/" class="menu-item text-large country-name country-IN country-cell country-name-full-width">
+                                India
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.ie/" class="menu-item text-large country-name country-IE country-cell country-name-full-width">
+                                Ireland
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.it/" class="menu-item text-large country-name country-IT country-cell country-name-full-width">
+                                Italia
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.nl/" class="menu-item text-large country-name country-NL country-cell country-name-full-width">
+                                Nederland
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.co.nz/" class="menu-item text-large country-name country-NZ country-cell country-name-full-width">
+                                New Zealand
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.no/" class="menu-item text-large country-name country-NO country-cell country-name-full-width">
+                                Norge
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.at/" class="menu-item text-large country-name country-AT country-cell country-name-full-width">
+                                Österreich
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.pt/" class="menu-item text-large country-name country-PT country-cell country-name-full-width">
+                                Portugal
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.ch/" class="menu-item text-large country-name country-CH country-cell ">
+                                Schweiz
+                            </a>
+                            <a href="https://www.vistaprint.ch/vp/ns/setlanguage.aspx?langid=19&amp;returl=%2f" class="country-cell text-large country-language">
+                                DE
+                            </a>
+                            <a href="https://www.vistaprint.ch/vp/ns/setlanguage.aspx?langid=20&amp;returl=%2ffr%2f" class="country-cell text-large country-language">
+                                FR
+                            </a>
+                            <a href="https://www.vistaprint.ch/vp/ns/setlanguage.aspx?langid=21&amp;returl=%2fit%2f" class="country-cell text-large country-language">
+                                IT
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.sg/" class="menu-item text-large country-name country-SG country-cell country-name-full-width">
+                                Singapore
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.fi/" class="menu-item text-large country-name country-FI country-cell country-name-full-width">
+                                Suomi
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.se/" class="menu-item text-large country-name country-SE country-cell country-name-full-width">
+                                Sverige
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.co.uk/" class="menu-item text-large country-name country-UK country-cell country-name-full-width">
+                                United Kingdom
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-selector-item-outer ">
+                        <div class="country-selector-item">
+
+                            <a href="https://www.vistaprint.jp/" class="menu-item text-large country-name country-JP country-cell country-name-full-width">
+                                日本
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dialog-content dialog-default-padding" data-dialog-skin="media" data-dialog-enablehistory="false" id="HubPageRedirectMessageModal">
+                        <div class="pop-header text-x-large">Warning: Changing locales might cause some items in your cart to be removed. Do you want to continue?</div>
+                        <div class="dialog-button-group">
+                            <a name="HubPageRedirectMessageModalOk" href="/EnterprisePartner/HubPage/GoToLocale?locale=US&amp;langid=EN" class="textbutton textbutton-skin-emphasis">OK</a>
+                            <a name="HubPageRedirectMessageModalCancel" href="javascript:return false;" class="close-dialog textbutton textbutton-skin-emphasis">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+            </header>
+
+
+            <header class="header-main">
+
+                <div class="header-logo-and-tagline">
+                    <span class="header-logo">
+                        <a href="/?no_redirect=1&amp;xnav=logo"><img src="/Sales/Utility/Img.caspx?s=%2fvp%2fimages%2fvp-site%2fcommon%2flogo%2fvistaprint-site-blue-209-42-2014-2x.png&amp;w=209&amp;h=42&amp;langid=1&amp;q=0&amp;c=255&amp;hc=004b4285&amp;ie6=0" srcset="/Sales/Utility/Img.caspx?s=%2fvp%2fimages%2fvp-site%2fcommon%2flogo%2fvistaprint-site-blue-209-42-2014-2x.png&amp;w=209&amp;h=42&amp;langid=1&amp;q=0&amp;c=255&amp;hc=004b4285&amp;ie6=0 1x, /Sales/Utility/Img.caspx?s=%2fvp%2fimages%2fvp-site%2fcommon%2flogo%2fvistaprint-site-blue-209-42-2014-2x.png&amp;w=418&amp;h=84&amp;langid=1&amp;q=0&amp;c=255&amp;hc=004b4388&amp;ie6=0 2x" style="height:42px;width:209px;" /></a>
+                    </span>
+                </div>
+
+    -->
+
+
+
+
+
         <div id="google_translate_element"></div>
+
         <script type="text/javascript">
             function googleTranslateElementInit() {
-                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
             }
         </script>
+
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
+        <!--
+
+    <select name="mb_address">
+            <option value="eng">
+            <option value="eng">
+    </select>
+
+    -->
 
 
 
@@ -96,23 +375,26 @@
         </div>
         <p>
             We are committed to delivery or supporting for products to restaurants, bakeries, cafes and supermarket, liquor store and sell to our customer by online shopping.<br /><br />
+            
             기존의 internet service가 많은 편리함과 혁신을 주고는 있지만 우리는 다시한번 이들을 돌아보고 진정한 혁신은 무엇인지가 우리가 생각하는 목표입니다.<br />
             그래서 우리는 2가지 비지니스 사업모델을 만들었읍니다.<br /><br />
 
             The company has two goals. One is a molieats service that orders and delivers food for small business owners in the field of eating, and the other is a molimall service that helps trade between retail and wholesale sales of goods.
             These two will be services that support retail-based stores, and in particular, the function that makes homepage easier will be a service that is newly introduced differently from the past.
             In addition, the company starts from North America, but will continue to upgrade its program to service worldwide by adding necessary functions such as multilingual language service and exchange rate fluctuation function.<br /><br />
-            첫째가 레스토랑, 베이커리, 카페 및 슈퍼마켓, 주류 판매점에 제품을 배달하거나 지원하는 food delivery service이며,<br />
-            두번째가 retail과 wholesale간의 거래를 통한 서비스 혁신을 만들어 내는 것이었읍니다.<br />
-            회사의 2가지 서비스중 한가지는 먹는 분야에 종사하는 소상공인들을 위한 음식 주문 및 배달을 하는 molieats service이고, 다른 하나는 물건을 사고파는 retail,wholesale간의 거래를 도와주는 molimall service 입니다.<br />
-            이 두가지는 retail에 기반을 둔 store를 지원하는 service가 될것이며,<br /><br />
-
+            
+            첫째가 레스토랑, 베이커리, 카페 그리고 슈퍼마켓, 주류 판매점에서 제품을 픽업 또는 배달하는 food delivery service이며,<br />
+            두번째가 retail과 wholesale간 거래의 전산화를 통한 서비스 혁신을 만들어 내는 것이었읍니다.<br />
+            
+            이들 서비스의 공통점은 홈페이지 자동 생성기능 입니다. 기존의 홈페이지 서비스가 데이터 없는 접근이라면 이것은 입역된 데이터를 기반으로 결제 그리고 온라님 주문 및 판매를 
+            하는 shopping channel 이기 때문에 단순 홈페이지 생성기능을 뛰어넘는 방식입니다.  
+ 
             특히 homepage를 손쉽게 만들어주는 기능은 지금까지와는 다르게 새롭게 선보이는 service가 될 것입니다.<br />
             기존의 서비스는 어느정도 컴퓨터에 숙달된 전문가가 아니면 만들기 어려웠다면 저희는 이보다 훨씬 쉬운 방법으로 만들수 있도록 기존의 틀을 파괴하였읍니다.<br /><br />
 
-            지금 회사는 북미에서만 서비스를 시작하지만 다국어 언어 그리고 환율 변동기능 등 필요한 기능을 추가하여 worldwide로 서비스하기 위해 지속적으로 program을 upgrade 할 것입니다.<br />
+            지금 회사는 북미에서만 서비스를 시작하지만 다국어 언어 그리고 환율 적용 등 필요한 기능을 추가하여 worldwide로 서비스하기 위해 지속적으로 program을 upgrade 할 것입니다.<br />
             I believe it will be wonderful enough to say that it is a gift from God. I sincerely hope that it will be helpful to small business owners in need.<br />
-            나는 그것이 하나님의 선물이라고 말할만큼 훌륭할 것이라고 믿습니다. 도움이 필요한 소상공인에게 유용하기를 진심으로 바랍니다.<br />
+            나는 이둘이 하나님의 선물이라고 말할만큼 훌륭할 것이라고 믿습니다. 도움이 필요한 소상공인에게 유용하기를 진심으로 바랍니다.<br />
         </p>
 
 
@@ -152,7 +434,7 @@
                 delivery service<br />
                 customer<br />
                 위 셋중의 한분일 것 입니다. <br /><br />
-                핸드폰에서 언제든지 역할을 바꿀수 있으며 store 운용에 필요한 서비스를 받을 수 있읍니다. 물론 무료도 있고 비용은 들겠지만 제공되는 서비스에 비하면 미미한 수준의 비용일 것입니다.<br /><br />
+                핸드폰에서 여러분은 언제든지 역할을 바꿀수 있으며 store 운용에 필요한 서비스를 받을 수 있읍니다. 물론 무료도 있고 비용은 들겠지만 제공되는 서비스에 비하면 미미한 수준의 비용일 것입니다.<br /><br />
 
                 부가적으로<br />
                 supermarket<br />
@@ -162,10 +444,10 @@
                 이 서비스의 출발은 향후 획기적으로 발전할수 있읍니다. 우리는 이 길을 묵묵히 수행할 것입니다.<br />
 
                 우리의 서비스는 관리비용이 매우 적읍니다. 그래서 delivery 하시는 분에게 보다 많은 혜택이 돌아갈 것입니다.<br />
-                또한 적은 고객이더라도 service value가 기업의 최우선 가지가 될 것입니다. 이것은 전 세계 store owner에게 동일한 혜택이 될 것입니다.<br /><br />
+                또한 적은 고객이더라도 service value는 기업의 최우선 가치가 될 것입니다. 이것은 전 세계 store owner에게 동일한 혜택이 될 것입니다.<br /><br />
 
                 결론적으로<br />
-                기존 음식배달 서비스의 단점인 높은 수수료 그리고 DB구조의 개선을 통한 다양한 서비스를 통해 고객에게 더 좋은 서비스를 할 것이라 믿읍니다.<br />
+                기존 음식배달 서비스의 단점인 높은 수수료 그리고 DB구조의 개선으로 다양한 데이터 서비스를 통해 고객에게 더 좋은 서비스를 할 것이라 믿읍니다.<br />
 
             </p>
         </div>
@@ -219,7 +501,32 @@
 
             </p>
 
-             <form action="/action_page.php" target="_blank">
+
+            <!--
+                
+            $con = oracle_connect("localhost","your_localhost_database_user","your_localhost_database_password","your_localhost_database_db");
+
+
+            $con = oracle_connect('localhost', 'root', '',’db_connect’);
+            The “db_connect” is our database name that we created before.
+            After connection database you need to take post variable from the form. See the below code
+            $Name = $_POST['Name'];
+            $Email = $_POST['Email'];
+            $Message = $_POST['Message'];
+
+
+
+            $sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES ('0', '$Name', '$Email', '$Message');"
+
+            -->
+
+
+
+
+
+
+
+            <form action="/action_page.php" target="_blank">
                 <div class="w3-section">
                     <label>Name</label>
                     <input class="w3-input w3-border" type="text" name="Name" required>
